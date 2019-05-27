@@ -1,22 +1,92 @@
-Github基础
-	仓库 repository
-	收藏 start
-	复制 fork
-	发起请求 pull request
-	关注 watch
-	事务卡片 issue
-	Github主页：左侧动态，右侧git库
-	注册github：github.com
-		username：用户名
-		Emailaddress：邮箱
-		password：密码
-		create an account --> continue --> skip this step
-		完成注册
-		验证邮箱 QQ邮箱需要设置白名单（反垃圾）
+﻿Github基础
+	1> 仓库 repository
+	2> 收藏 start
+	3> 复制 fork
+	4> 发起请求 pull request
+	5> 关注 watch
+	6> 事务卡片 issue
+	7> Github主页：左侧动态，右侧git库
+	8> 注册github：github.com
+		a) username：用户名
+		b) Emailaddress：邮箱
+		c) password：密码
+		d) create an account --> continue --> skip this step
+		e) 完成注册
+		f) 验证邮箱 QQ邮箱需要设置白名单（反垃圾）
 * github 国外服务器访问慢，需要翻墙（shadowsocks 需要会Linux指令即可）
 
 创建仓库
 	仓库名一般为项目名称
 仓库管理
-	新建文件
-	commits：提交次数
+	1> 新建文件：create a new file
+	2> commits：显示操作次数及历史
+	3> 搜获文件：快捷键T
+	4> 下载：download/clone
+GitHub issues
+	1> 作用：发现代码BUG，提出问题讨论
+	2> 名称-->	详情-->	提交
+个人主页
+	1> start：打开对应项目主页，进行收藏
+	2> watch：关注别人的项目
+	3> fork：复制别人的项目，切单独存在
+	4> pull request：请求我复制的项目更新跟我的一样
+开源项目贡献流程
+	1> 新建issue：提交使用问题或者建议或者想法
+	2> pull request ：
+		a) fork项目
+		b) 修改自己仓库项目代码
+		c) 新建pull request
+		d) 等待项目开发者合并
+Git安装
+	1> 官网下载安装
+Git基本工作流程
+	1> git工作区域
+	2> 向仓库中添加文件流程
+		a) git status
+		b) git add xxx.xx --> 工作区(working directory) to 缓存区
+		c) git status
+		d) git commit -m "提交描述" --> 缓存区 to Git repository(git仓库)
+		e) git status
+Git初始化及仓库创建和操作
+	1> 基本信息设置
+		a) 设置用户名
+			git config --global user.nam 'Ryze0124'
+		b) 设置用户名邮箱
+			git config --global user.email 'czdnseu@163.com'
+* 改设置在GitHub仓库主页显示谁提交了该文件
+	2> 初始化新的Git仓库
+		a) 创建文件夹：mkdir xxx
+		b) 在文件内初始化git仓库
+			$cd xxx
+			$git init
+			* .git文件用于存储仓库信息
+	3> 向仓库中添加文件
+		a) 新建文件
+			$touch xxx.xx
+		b) 添加文件到暂存区
+			$git status
+			$git add xxx.xx
+		c) 添加文件到仓库
+			$git status
+			$git commit -m 'xxx.xx的文件描述'
+	4> 修改文件
+		a) 编辑文件：
+			$vi/vim xxx.xx
+		b) 添加到暂存区：
+			$git status
+			$git add xxx.xx
+		c) 添加文件到仓库
+			$git status
+			$git commit -m 'xxx.xx的文件描述'
+	5> 删除文件
+		a) 删除文件：
+			$rm -rf xxx.xx
+		b) 删除暂存区：
+			$git rm xxx.xx
+		c) 删除仓库，提交描述
+			$git commit -m 'xxx.xx的文件描述'
+Git管理远程仓库
+	目的：
+	Git克隆操作
+		$git clone 地址
+		
