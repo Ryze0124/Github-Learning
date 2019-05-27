@@ -1,0 +1,21 @@
+Github基础
+	仓库 repository
+	收藏 start
+	复制 fork
+	发起请求 pull request
+	关注 watch
+	事务卡片 issue
+	Github主页：左侧动态，右侧git库
+	注册github：github.com
+		username：用户名
+		Emailaddress：邮箱
+		password：密码
+		create an account --> continue --> skip this step
+		完成注册
+		验证邮箱 QQ邮箱需要设置白名单（反垃圾）
+* github 国外服务器访问慢，需要翻墙（shadowsocks 需要会Linux指令即可）
+
+创建仓库
+	仓库名一般为项目名称
+仓库管理
+	新建文件
